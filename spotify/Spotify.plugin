@@ -19,9 +19,17 @@ http-response ^https:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|u
 
 [rewrite_local]
 # 歌词翻译
-# DualSubs.Spotify.Transcript-read-along.Translate.response.proto
-^https?:\/\/spclient\.wg\.spotify\.com\/transcript-read-along\/v2\/episode\/\w+ url script-response-body https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/spotify/DualSubsTranscriptsTranslateresponse-1.js
-# DualSubs.Spotify.Episode-transcripts.Translate.response.proto
-^https?:\/\/episode-transcripts\.spotifycdn\.com\/1\.0\/spotify:transcript:\w+ url script-response-body https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/spotify/DualSubsTranscriptsTranslateresponse-1.js
+# DualSubs.Spotify.Tracks.response
+^https?:\/\/api\.spotify\.com\/v1\/tracks\? url script-response-body https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/spotify/response.bundle.js
+
+# DualSubs.Spotify.Lyrics.request
+^https?:\/\/spclient\.wg\.spotify\.com\/color-lyrics\/v2\/track\/(.+)\?(.*) url script-request-body https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/spotify/response.bundle.js
+
+# DualSubs.Spotify.Translate.Lyrics.response
+^https?:\/\/spclient\.wg\.spotify\.com\/color-lyrics\/v2\/track\/(.+)\?(.*)subtype=Translate url script-response-body https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/spotify/response.bundle.js
+
+# DualSubs.Spotify.External.Lyrics.response
+^https?:\/\/spclient\.wg\.spotify\.com\/color-lyrics\/v2\/track\/(.+)\?(.*)subtype=External url script-response-body https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/spotify/response.bundle.js
+
 [Mitm]
 hostname = spclient.wg.spotify.com, episode-transcripts.spotifycdn.com, api.spotify.com, spclient.wg.spotify.com
