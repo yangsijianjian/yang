@@ -1,11 +1,11 @@
 // 2024-08-20 09:49
 /*需要分流禁用掉 
-ip-cidr, 123.207.209.39/32, reject
-ip-cidr, 123.207.209.60/32, reject
-ip-cidr, 139.199.240.12/32, reject
-ip-cidr, 162.14.157.2/32, reject
+# ip-cidr, 123.207.209.39/32, reject
+# ip-cidr, 123.207.209.60/32, reject
+# ip-cidr, 139.199.240.12/32, reject
+# ip-cidr, 162.14.157.2/32, reject
 # ip-cidr, 162.14.157.24/32, reject
-群友EDDA分享
+# 群友EDDA分享
 # ip-cidr, 139.199.240.15/32, reject
 */
 
