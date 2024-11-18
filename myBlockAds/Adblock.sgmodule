@@ -1,5 +1,5 @@
-#!name=墨鱼去广告模块
-#!desc=融合版，包括墨鱼去开屏2.0、喜马拉雅、哔哩哔哩、微博、KEEP、知乎、百度网盘、高德地图、小红书、网易云、什么值得买、菜鸟、彩云天气、豆瓣网页等
+#!name=去广告模块
+#!desc=融合版，包括去开屏2.0、喜马拉雅、哔哩哔哩、微博、KEEP、知乎、百度网盘、高德地图、小红书、网易云、什么值得买、菜鸟、彩云天气、豆瓣网页等
 
 # > 小红书_搜索结果推荐广告@ddgksf2013
 ^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d+\/search\/notes\? url script-response-body https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/xiaohongshu/redbook.js
@@ -37,7 +37,8 @@
 ^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/user\/teenager\/status url reject-dict
 # > 小红书_启动引导@ddgksf2013
 ^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/guide\/home_guide url reject-dict
-
+# 移除图片和实况照片水印
+http-response ^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v1\/note\/(?:imagefeed|live_photo\/save) script-path = https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/xiaohongshu/xiaohongshu.js, requires-body = true, tag = 移除图片和实况照片水印
 ^https?:\/\/2024.10.19/c350/v2.0.538 - reject
 ^http:\/\/.*babytree\.com/(plough\.do|go_search\/api\/mobile_search_new\/get_multi_search_default_keywords) - reject
 ^http:\/\/ads.?s?ervice(retry)?\.(kugou|kglink).(com|cn)\/v\d\/ - reject
