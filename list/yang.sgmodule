@@ -4,10 +4,6 @@
 [General]
 bypass-system = true
 [Rule]
-
-#!name=分流、拦截合集
-#!desc=整合分流、兜底拦截、网页拦截等
-# ---------------------------------------
 # 屏蔽iOS更新
 DOMAIN,gdmf.apple.com,REJECT
 DOMAIN,xp.apple.com,REJECT
