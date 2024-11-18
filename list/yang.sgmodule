@@ -1,0 +1,7 @@
+#!name=小喵看书去广告
+#!desc=移除小喵看书章末广告
+#!author=yangsijian
+[General]
+bypass-system = true
+
+[Rule]
