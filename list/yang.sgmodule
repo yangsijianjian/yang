@@ -14,6 +14,7 @@ DOMAIN-SUFFIX,localhost,REJECT
 # ---------------------------------------
 #wechat
 DOMAIN-SUFFIX,*.tc.com,china
+DOMAIN-SUFFIX,*.weixin.qq.com,china
 #
 ---------------------------------------
 #抖音
