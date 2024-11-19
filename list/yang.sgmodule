@@ -29,6 +29,7 @@ RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/l
 RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/TikTok.list,TikTok
 #youtube
 RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/YouTube.list,YouTube
+[Rule]
 #网页去广告
 DOMAIN-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/anti-ad-surge2.txt,REJECT
 #wechat
