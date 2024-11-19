@@ -9,7 +9,8 @@ DOMAIN,gdmf.apple.com,REJECT
 DOMAIN,xp.apple.com,REJECT
 # ---------------------------------------
 #ASNchina
-RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/ASNChina.list,china,update-interval=-1
+RULE-SET,
+IPASN-url = https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/ASNChina.list,china,update-interval=-1
 # ---------------------------------------
 # 减少应用循环
 IP-CIDR,0.0.0.0/32,REJECT,no-resolve
