@@ -1,11 +1,11 @@
 #!name=融合分流
 #!desc=融合分流
 [Rule]
-# 小红书去广告辅助
+# QUIC协议
 PROTOCOL,QUIC,REJECT
 #wechat
 DOMAIN-SUFFIX,*.tc.com,china
-DOMAIN-SUFFIX,wx.qlogo.cn,china
+DOMAIN-SUFFIX,wx.qlogo.cn,china    
 #抖音
 DOMAIN-SUFFIX,*.douyinpic.com,china
 #微信键盘
