@@ -1,18 +1,13 @@
 #!name=融合分流
 #!desc=融合分流
 [Rule]
+# 小红书去广告辅助
+PROTOCOL,QUIC,REJECT
 #wechat
 DOMAIN-SUFFIX,*.tc.com,china
 DOMAIN-SUFFIX,wx.qlogo.cn,china
 #抖音
 DOMAIN-SUFFIX,*.douyinpic.com,china
-#网页去广告
-DOMAIN-SET,https://raw.githubusercontent.com/yangsijianjian/yang/main/list/anti-ad-surge2.txt,REJECT
-# 小红书去广告辅助
-PROTOCOL,QUIC,REJECT
-# 屏蔽ios更新
-DOMAIN,gdmf.apple.com,REJECT
-DOMAIN,xp.apple.com,REJECT
 #微信键盘
 DOMAIN-SUFFIX,wetype.weixin.qq.com,REJECT
 #滴滴
@@ -25,24 +20,27 @@ DOMAIN-SUFFIX,mobads.baidu.com,REJECT
 DOMAIN-SUFFIX,afd.baidu.com,REJECT
 # 携程商旅去弹窗
 DOMAIN-SUFFIX,m.ctrip.com,REJECT
-# 减少应用循环
-IP-CIDR,0.0.0.0/32,REJECT
+#网页去广告
+DOMAIN-SET,https://raw.githubusercontent.com/yangsijianjian/yang/main/list/anti-ad-surge2.txt,REJECT
+# 屏蔽ios更新
+DOMAIN,gdmf.apple.com,REJECT
+DOMAIN,xp.apple.com,REJECT
 #china
 RULE-SET,https://github.com/VirgilClyne/GetSomeFries/raw/main/ruleset/ASN.China.list,china
 #局域网
 RULE-SET,LAN,china
-#apple
-RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/Apple_All_No_Resolve.list,Apple
+#proxy
+RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/Proxy_All_No_Resolve.list,Proxy
 #全球分流
 RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/GlobalMedia_All_No_Resolve.list,GlobalMedia
+#apple
+RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/Apple_All_No_Resolve.list,Apple
 #bilibili
 RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/BiliBili.list,BiliBili
 #facebook
 RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/Facebook.list,facebook
 #ins
 RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/Instagram.list,Instagram
-#proxy
-RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/Proxy_All_No_Resolve.list,Proxy
 #chatgtp
 RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/OpenAI.list,OpenAI
 #微软系列
@@ -55,4 +53,5 @@ RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/l
 RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/TikTok.list,TikTok
 #youtube
 RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/YouTube.list,YouTube
-#
+# 减少应用循环
+IP-CIDR,0.0.0.0/32,REJECT
