@@ -2,12 +2,7 @@
 #!desc=融合分流
 [Rule]
 # QUIC协议
-PROTOCOL,QUIC,REJECT
-#wechat
-DOMAIN-SUFFIX,*.tc.com,china
-DOMAIN-SUFFIX,wx.qlogo.cn,china    
-#抖音
-DOMAIN-SUFFIX,*.douyinpic.com,china
+PROTOCOL,QUIC,REJECT      
 #微信键盘
 DOMAIN-SUFFIX,wetype.weixin.qq.com,REJECT
 #滴滴
@@ -20,6 +15,10 @@ DOMAIN-SUFFIX,mobads.baidu.com,REJECT
 DOMAIN-SUFFIX,afd.baidu.com,REJECT
 # 携程商旅去弹窗
 DOMAIN-SUFFIX,m.ctrip.com,REJECT
+#siri
+DOMAIN,api2.smoot.apple.com,china
+DOMAIN,guzzoni.smoot.apple.com,china
+DOMAIN-SUFFIX,api-*.smoot.apple.com,china
 #网页去广告
 DOMAIN-SET,https://raw.githubusercontent.com/yangsijianjian/yang/main/list/anti-ad-surge2.txt,REJECT
 # 屏蔽ios更新
