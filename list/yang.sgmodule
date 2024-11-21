@@ -2,7 +2,9 @@
 #!desc=融合分流
 [Rule]
 # QUIC协议
-PROTOCOL,QUIC,REJECT      
+PROTOCOL,QUIC,REJECT
+#gpt登录
+DOMAIN-SUFFIX,apple-relay.apple.com,OpenAI
 #微信键盘
 DOMAIN-SUFFIX,wetype.weixin.qq.com,REJECT
 #滴滴
