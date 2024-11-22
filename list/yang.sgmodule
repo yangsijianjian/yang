@@ -26,14 +26,6 @@ DOMAIN-SET,https://raw.githubusercontent.com/yangsijianjian/yang/main/list/anti-
 # 屏蔽ios更新
 DOMAIN,gdmf.apple.com,REJECT
 DOMAIN,xp.apple.com,REJECT
-#china
-RULE-SET,https://github.com/VirgilClyne/GetSomeFries/raw/main/ruleset/ASN.China.list,china
-#局域网
-RULE-SET,LAN,china
-#proxy
-RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/Proxy_All_No_Resolve.list,Proxy
-#全球分流
-RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/GlobalMedia_All_No_Resolve.list,GlobalMedia
 #apple
 RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/Apple_All_No_Resolve.list,Apple
 #bilibili
@@ -54,5 +46,13 @@ RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/l
 RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/TikTok.list,TikTok
 #youtube
 RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/YouTube.list,YouTube
+#china
+RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/ASNChina.list,china
+#局域网
+RULE-SET,LAN,china
+#proxy
+RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/Proxy_All_No_Resolve.list,Proxy
+#全球分流
+RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/GlobalMedia_All_No_Resolve.list,GlobalMedia
 # 减少应用循环
 IP-CIDR,0.0.0.0/32,REJECT
