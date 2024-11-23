@@ -6,6 +6,8 @@ PROTOCOL,QUIC,REJECT
 # 抖音
 DOMAIN-SUFFIX,*.douyinpic.com,china
 DOMAIN-SUFFIX,*.zjcdn.com,china
+# 微信
+DOMAIN-SUFFIX,wxapp.tc.qq.com,china
 # 微信键盘
 DOMAIN-SUFFIX,wetype.weixin.qq.com,REJECT
 # 滴滴
