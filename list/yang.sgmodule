@@ -29,7 +29,10 @@ DOMAIN-SET,https://raw.githubusercontent.com/yangsijianjian/yang/main/list/anti-
 # 屏蔽ios更新
 DOMAIN,gdmf.apple.com,REJECT
 # apple
-RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/Apple_All_No_Resolve.list,Apple
+RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/
+Apple_All_No_Resolve.list,Apple
+# 抖音
+RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/DouYin.list,Apple
 # bilibili
 RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/BiliBili.list,BiliBili
 # facebook
