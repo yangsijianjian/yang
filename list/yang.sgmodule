@@ -48,13 +48,14 @@ RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/l
 RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/YouTube.list,YouTube
 # 抖音
 RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/DouYin.list,Proxy
-#局域网
-RULE-SET,LAN,china
 #proxy
 RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/Proxy_All_No_Resolve.list,Proxy
 #全球分流
 RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/GlobalMedia_All_No_Resolve.list,GlobalMedia
 #china
+RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/ChinaMax_All.list,china
 RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/ASNChina.list,china
+#局域网
+RULE-SET,LAN,china
 # 减少应用循环
 IP-CIDR,0.0.0.0/32,REJECT
