@@ -40,20 +40,20 @@ RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/l
 RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/Microsoft.list,Microsoft
 #spotify
 RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/Spotify.list,Spotify
+#youtube
+RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/YouTube.list,YouTube
 #tg
 RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/Telegram.list,Telegram
 #tiktok
 RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/TikTok.list,TikTok
-#youtube
-RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/YouTube.list,YouTube
 # 抖音
 RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/DouYin.list,Proxy
-#proxy
-RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/Proxy_All_No_Resolve.list,Proxy
 #全球分流
 RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/GlobalMedia_All_No_Resolve.list,GlobalMedia
+#proxy
+RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/Proxy_All_No_Resolve.list,Proxy
 #china
-RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/CN.list,china
+RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/cn.list,china
 #局域网
 RULE-SET,LAN,china
 # 减少应用循环
