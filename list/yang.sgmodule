@@ -53,8 +53,7 @@ RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/l
 #全球分流
 RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/GlobalMedia_All_No_Resolve.list,GlobalMedia
 #china
-RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/ChinaMax_All.list,china
-RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/ASNChina.list,china
+RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/CN.list,china
 #局域网
 RULE-SET,LAN,china
 # 减少应用循环
