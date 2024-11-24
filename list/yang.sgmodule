@@ -3,8 +3,6 @@
 [Rule]
 # QUIC协议
 PROTOCOL,QUIC,REJECT
-# gpt登录
-DOMAIN-SUFFIX,apple-relay.apple.com,OpenAI
 # 微信键盘
 DOMAIN-SUFFIX,wetype.weixin.qq.com,REJECT
 # 滴滴
@@ -17,10 +15,6 @@ DOMAIN-SUFFIX,mobads.baidu.com,REJECT
 DOMAIN-SUFFIX,afd.baidu.com,REJECT
 # 携程商旅去弹窗
 DOMAIN-SUFFIX,m.ctrip.com,REJECT
-#siri
-#DOMAIN,api2.smoot.apple.com,china
-#DOMAIN,guzzoni.smoot.apple.com,china
-#DOMAIN-SUFFIX,api-*.smoot.apple.com,china
 # 网页去广告
 DOMAIN-SET,https://raw.githubusercontent.com/yangsijianjian/yang/main/list/anti-ad-surge2.txt,REJECT
 # 屏蔽ios更新
@@ -46,15 +40,11 @@ RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/l
 RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/Telegram.list,Telegram
 # tiktok
 RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/TikTok.list,TikTok
-# 抖音
-RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/DouYin.list,china
 # 全球分流
 RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/GlobalMedia_All_No_Resolve.list,GlobalMedia
 # proxy
 RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/Proxy_All_No_Resolve.list,Proxy
 # china
 RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/cn.list,china
-# 局域网
-RULE-SET,LAN,china
 # 减少应用循环
 IP-CIDR,0.0.0.0/32,REJECT
