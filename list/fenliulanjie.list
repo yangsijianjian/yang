@@ -3,15 +3,15 @@
 #!name=分流拦截
 #!desc=分流拦截
 
-DOMAIN,dns.weixin.qq.com,REJECT
-DOMAIN,dns.weixin.qq.com.cn,REJECT
-IP-CIDR,42.81.232.18/32,REJECT,no-resolve
-IP-CIDR,42.187.182.106/32,REJECT,no-resolve
-IP-CIDR,42.187.182.123/32,REJECT,no-resolve
-IP-CIDR,42.187.184.154/32,REJECT,no-resolve
-IP-CIDR,123.151.54.50/32,REJECT,no-resolve
-IP-CIDR6,2402:4e00:1900:1700:0:9554:1ad9:c3a/128,REJECT,no-resolve
-IP-CIDR6,240e:928:1400:10::25/128,REJECT,no-resolve
+DOMAIN,dns.weixin.qq.com
+DOMAIN,dns.weixin.qq.com.cn
+IP-CIDR,42.81.232.18/32,no-resolve
+IP-CIDR,42.187.182.106/32,no-resolve
+IP-CIDR,42.187.182.123/32,no-resolve
+IP-CIDR,42.187.184.154/32,no-resolve
+IP-CIDR,123.151.54.50/32,no-resolve
+IP-CIDR6,2402:4e00:1900:1700:0:9554:1ad9:c3a/128,no-resolve
+IP-CIDR6,240e:928:1400:10::25/128,no-resolve
 ## 阿里云
 IP-CIDR, 203.107.1.1/24, no-resolve
 # Apple
