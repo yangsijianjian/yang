@@ -1,4 +1,5 @@
-# 2024-09-17 22:35
+#!name=分流拦截
+#!desc=分流拦截
 
 # ======= A ======= #
 DOMAIN,dns.weixin.qq.com,REJECT
