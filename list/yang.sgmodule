@@ -46,5 +46,7 @@ RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/l
 RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/Proxy_All_No_Resolve.list,Proxy
 # china
 RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/cn.list,china
+# 分流拦截
+RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/fenliulanjie.list,REJECT
 # 减少应用循环
 IP-CIDR,0.0.0.0/32,REJECT
