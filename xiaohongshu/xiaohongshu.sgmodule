@@ -1,30 +1,47 @@
-#!name= iRingo: ⭕ Siri β
-#!desc=BETA: V2️⃣ & iOS 18⬆️ & watchOS 11⬆️\n全面自定义「Siri」中的「Siri 请求」和「Siri 建议」功能。
-#!openUrl=http://boxjs.com/#/app/iRingo.Siri.Beta
-#!author=VirgilClyne[https://github.com/VirgilClyne]
-#!homepage=https://github.com/NSRingo
-#!manual=https://github.com/NSRingo/Siri/wiki/🟥-Apple智能与Siri
-#!icon=https://developer.apple.com/assets/elements/icons/siri/siri-128x128.png
-#!category= iRingo
-#!arguments=CountryCode:US
-#!arguments-desc=CountryCode: 国家或地区代码
+#!name = 小红书净化
+#!desc = 小红书净化
+移除图片和实况照片水印 = type=http-response, pattern=^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v1\/note\/(?:imagefeed|live_photo\/save), script-path=https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/xiaohongshu/xiaohongshu.js, requires-body=true
+# > 小红书_评论区图片处理@ddgksf2013
+^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/note\/comment\/list url script-response-body https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/xiaohongshu/redbook.js
+# > 小红书_Live图片去水印@ddgksf2013
+^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/note\/live_photo\/save url script-response-body https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/xiaohongshu/redbook.js
+# > 小红书_通用广告请求@ddgksf2013
+^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/system_service\/splash url reject-200
+# > 小红书_搜索结果推荐广告@ddgksf2013
+^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d+\/search\/notes\? url script-response-body https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/xiaohongshu/redbook.js
+# > 小红书_视频播放页商品推广@ddgksf2013
+^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/note\/widgets url script-response-body https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/xiaohongshu/redbook.js
+# > 小红书_短视频流去水印+强制开启保存功能@ddgksf2013
+^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/note\/redtube\? url script-response-body https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/xiaohongshu/redbook.js
+# > 小红书_信息流视频去水印+强制开启保存功能@ddgksf2013
+^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/note\/videofeed\? url script-response-body https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/xiaohongshu/redbook.js
+# > 小红书_信息流图片去水印@ddgksf2013
+^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/note\/feed\? url script-response-body https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/xiaohongshu/redbook.js
+# > 小红书_信息流图片[部分用户是下面请求]去水印@ddgksf2013
+^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/note\/imagefeed url script-response-body https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/xiaohongshu/redbook.js
+# > 小红书_开屏广告@ddgksf2013
+^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/system_service\/splash_config url script-response-body https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/xiaohongshu/redbook.js
+# > 小红书_首页瀑布流@ddgksf2013
+^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/homefeed\? url script-response-body https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/xiaohongshu/redbook.js
+# > 小红书_启动处理@ddgksf2013
+^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/system_service\/config\? url script-response-body https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/xiaohongshu/redbook.js
+# > 小红书_热搜发现@ddgksf2013
+^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/search\/hot_list url script-response-body https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/xiaohongshu/redbook.js
+# > 小红书_默认填词@ddgksf2013
+^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/search\/hint url script-response-body https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/xiaohongshu/redbook.js
+# > 小红书_去除购物@ddgksf2013
+^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/homefeed\/categories url script-response-body https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/xiaohongshu/redbook.js
+# > 小红书_猜你想搜@ddgksf2013
+^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/search\/trending url script-response-body https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/xiaohongshu/redbook.js
+# > 小红书_通用广告请求@ddgksf2013
+^https?:\/\/www\.xiaohongshu\.com\/api\/sns\/v\d\/(tag\/)?ads url reject-200
+# > 小红书_隐私屏蔽@ddgksf2013
+^https?:\/\/referee\.xiaohongshu\.com\/v\d\/stateReport url reject-200
+# > 小红书_Switches@ddgksf2013
+^https?:\/\/pages\.xiaohongshu\.com\/data\/native\/matrix_switches url reject-200
+# > 小红书_青少年请求@ddgksf2013
+^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/user\/teenager\/status url reject-200
+# > 小红书_启动引导@ddgksf2013
+^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/guide\/home_guide url reject-200
 
-[Script]
-# Apple.Parsec.Siri.V2Alpha.SiriSearch
-⭕ Siri.SiriSearch.request = type=http-request, pattern=^https?:\/\/(guzzoni|api2|api-.*)\.smoot\.apple\.com\/apple\.parsec\.siri\.v2alpha\.SiriSearch\/SiriSearch, requires-body=1, binary-body-mode=1, engine=webview, debug=1, script-path=https://raw.githubusercontent.com/NSRingo/Siri/dev/debug/request.bundle.js, argument=CountryCode={{{CountryCode}}}
-⭕ Siri.SiriSearch.response = type=http-response, pattern=^https?:\/\/(guzzoni|api2|api-.*)\.smoot\.apple\.com\/apple\.parsec\.siri\.v2alpha\.SiriSearch\/SiriSearch, requires-body=1, binary-body-mode=1, engine=webview, debug=1, script-path=https://raw.githubusercontent.com/NSRingo/Siri/dev/debug/response.bundle.js, argument=CountryCode={{{CountryCode}}}
-# Apple.Parsec.Lookup.V1Alpha.LookupSearch
-🔍 Lookup.LookupSearch.request = type=http-request, pattern=^https?:\/\/(api-lookup|api2|api-.*)\.smoot\.apple\.com\/apple\.parsec\.lookup\.v1alpha\.LookupSearch\/LookupSearch, requires-body=1, binary-body-mode=1, engine=webview, debug=1, script-path=https://raw.githubusercontent.com/NSRingo/Siri/dev/debug/request.bundle.js, argument=CountryCode={{{CountryCode}}}
-🔍 Lookup.LookupSearch.response = type=http-response, pattern=^https?:\/\/(api-lookup|api2|api-.*)\.smoot\.apple\.com\/apple\.parsec\.lookup\.v1alpha\.LookupSearch\/LookupSearch, requires-body=1, binary-body-mode=1, engine=webview, debug=1, script-path=https://raw.githubusercontent.com/NSRingo/Siri/dev/debug/response.bundle.js, argument=CountryCode={{{CountryCode}}}
-# Apple.Parsec.Visualsearch.V2.VisualSearch
-🔍 Visualsearch.VisualSearch.request = type=http-request, pattern=^https?:\/\/(api2|api-.*)\.smoot\.apple\.com\/apple\.parsec\.visualsearch\.v2\.VisualSearch\/VisualSearch, requires-body=1, binary-body-mode=1, engine=webview, debug=1, script-path=https://raw.githubusercontent.com/NSRingo/Siri/dev/debug/request.bundle.js, argument=CountryCode={{{CountryCode}}}
-🔍 Visualsearch.VisualSearch.response = type=http-response, pattern=^https?:\/\/(api2|api-.*)\.smoot\.apple\.com\/apple\.parsec\.visualsearch\.v2\.VisualSearch\/VisualSearch, requires-body=1, binary-body-mode=1, engine=webview, debug=1, script-path=https://raw.githubusercontent.com/NSRingo/Siri/dev/debug/response.bundle.js, argument=CountryCode={{{CountryCode}}}
-# Apple.Parsec.ResponseFramework.Engagement.V1Alpha.EngagementSearch
-🔍 ResponseFramework.Engagement.EngagementSearch.request = type=http-request, pattern=^https?:\/\/(api-.*)\.smoot\.apple\.com\/apple\.parsec\.responseframework\.engagement\.v1alpha\.EngagementSearch\/EngagementSearch, requires-body=1, binary-body-mode=1, engine=webview, debug=1, script-path=https://raw.githubusercontent.com/NSRingo/Siri/dev/debug/request.bundle.js, argument=CountryCode={{{CountryCode}}}
-🔍 ResponseFramework.Engagement.EngagementSearch.response = type=http-response, pattern=^https?:\/\/(api-.*)\.smoot\.apple\.com\/apple\.parsec\.responseframework\.engagement\.v1alpha\.EngagementSearch\/EngagementSearch, requires-body=1, binary-body-mode=1, engine=webview, debug=1, script-path=https://raw.githubusercontent.com/NSRingo/Siri/dev/debug/response.bundle.js, argument=CountryCode={{{CountryCode}}}
-# Apple.Parsec.Spotlight.V1Alpha.ZkwSuggestService
-🔍 Spotlight.ZkwSuggestService.request = type=http-request, pattern=^https?:\/\/(api-.*)\.smoot\.apple\.com\/apple\.parsec\.spotlight\.v1alpha\.ZkwSuggestService\/Suggest, requires-body=1, binary-body-mode=1, engine=webview, debug=1, script-path=https://raw.githubusercontent.com/NSRingo/Siri/dev/debug/request.bundle.js, argument=CountryCode={{{CountryCode}}}
-🔍 Spotlight.ZkwSuggestService.response = type=http-response, pattern=^https?:\/\/(api-.*)\.smoot\.apple\.com\/apple\.parsec\.spotlight\.v1alpha\.ZkwSuggestService\/Suggest, requires-body=1, binary-body-mode=1, engine=webview, debug=1, script-path=https://raw.githubusercontent.com/NSRingo/Siri/dev/debug/response.bundle.js, argument=CountryCode={{{CountryCode}}}
-
-[MITM]
-hostname = %APPEND% guzzoni.smoot.apple.com, api2.smoot.apple.com, api-*.smoot.apple.com
+hostname = edith.xiaohongshu.com, www.xiaohongshu.com, pages.xiaohongshu.com, referee.xiaohongshu.com
