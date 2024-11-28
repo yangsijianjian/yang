@@ -4,9 +4,9 @@
 #!icon = https://raw.githubusercontent.com/RuCu6/Loon/main/Icons/app/xiaohongshu.png
 #!date = 2024-10-15 10:45
 
-#[Rule]
+[Rule]
 #AND, ((PROTOCOL, UDP), (DOMAIN-SUFFIX, xiaohongshu.com)), REJECT
-[Script]
+#[Script]
 # > 小红书_评论区图片处理@ddgksf2013
 ^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/note\/comment\/list url script-response-body https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/xiaohongshu/redbook.js
 # > 小红书_Live图片去水印@ddgksf2013
