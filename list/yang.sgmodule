@@ -2,7 +2,7 @@
 #!desc=融合分流
 [Rule]
 # QUIC协议
-PROTOCOL,QUIC,REJECT
+PROTOCOL,QUIC,REJECT,AND, ((PROTOCOL,UDP), (DOMAIN-SUFFIX,xiaohongshu.com,DOMAIN-SUFFIX,dns.weixin.qq.com,DOMAIN-SUFFIX,dns.weixin.qq.com.cn)), REJECT
 # 微信键盘
 DOMAIN-SUFFIX,wetype.weixin.qq.com,REJECT
 # 滴滴
