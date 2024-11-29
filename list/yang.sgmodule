@@ -48,5 +48,8 @@ RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/l
 RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/cn.list,china
 # 分流拦截
 RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/fenliulanjie.list,REJECT
+# 自动切换ipv6/ipv4
+IP-CIDR6,::/0,china
+IP-CIDR,0.0.0.0/0,china
 # 减少应用循环
 IP-CIDR,0.0.0.0/32,REJECT
