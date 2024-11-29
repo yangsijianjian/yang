@@ -1,8 +1,6 @@
 #!name=融合分流
 #!desc=融合分流
 [Rule]
-# QUIC协议
-PROTOCOL,QUIC,AND, ((PROTOCOL,UDP), (DOMAIN-SUFFIX,xiaohongshu.com,DOMAIN-SUFFIX,dns.weixin.qq.com,DOMAIN-SUFFIX,dns.weixin.qq.com.cn)), REJECT
 # 微信键盘
 DOMAIN-SUFFIX,wetype.weixin.qq.com,REJECT
 # 滴滴
@@ -50,8 +48,3 @@ RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/l
 RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/cn.list,china
 # 分流拦截
 RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/fenliulanjie.list,REJECT
-# ipv4/ipv6
-IP-CIDR6,::/0,china
-IP-CIDR,0.0.0.0/0,china
-# 减少应用循环
-IP-CIDR,0.0.0.0/32,REJECT
