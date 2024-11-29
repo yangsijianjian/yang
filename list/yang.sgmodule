@@ -48,3 +48,6 @@ RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/l
 RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/cn.list,china
 # 分流拦截
 RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/fenliulanjie.list,REJECT
+# ipv4/ipv6
+IP-CIDR6,::/0,china
+
