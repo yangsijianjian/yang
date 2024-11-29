@@ -42,13 +42,15 @@ RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/l
 RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/TikTok.list,TikTok
 # 全球分流
 RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/GlobalMedia_All_No_Resolve.list,GlobalMedia
+# 全球网页分流
+RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/Global_All.list.list,Global
 # proxy
 RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/Proxy_All_No_Resolve.list,Proxy
 # china
 RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/cn.list,china
 # 分流拦截
 RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/fenliulanjie.list,REJECT
-# 自动切换ipv6/ipv4
+# ipv4/ipv6
 IP-CIDR6,::/0,china
 IP-CIDR,0.0.0.0/0,china
 # 减少应用循环
