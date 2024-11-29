@@ -4,7 +4,7 @@
 #!icon = https://raw.githubusercontent.com/RuCu6/Loon/main/Icons/app/xiaohongshu.png
 #!date = 2024-10-15 10:45
 [Rule]
-#AND, ((PROTOCOL, UDP), (DOMAIN-SUFFIX, xiaohongshu.com)), REJECT
+PROTOCOL,QUIC,REJECT,AND, ((PROTOCOL,UDP), (DOMAIN-SUFFIX,xiaohongshu.com,DOMAIN-SUFFIX,dns.weixin.qq.com,DOMAIN-SUFFIX,dns.weixin.qq.com.cn)), REJECT
 [Rewrite]
 # > 小红书_评论区图片处理@ddgksf2013
 ^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/note\/comment\/list url script-response-body https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/xiaohongshu/redbook.js
