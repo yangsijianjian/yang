@@ -1,23 +1,10 @@
 #!name=融合分流
 #!desc=融合分流
 [Rule]
-# 拒绝所有其他 QUIC 流量
-PROTOCOL,QUIC,REJECT
-# 微信键盘
-DOMAIN-SUFFIX,wetype.weixin.qq.com,REJECT
-# 航旅纵横
-DOMAIN-SUFFIX,m.ctrip.com,REJECT
-DOMAIN-SUFFIX,discardrp.umetrip.com,REJECT
-# 百度贴吧去广告
-DOMAIN-SUFFIX,mobads.baidu.com,REJECT
-DOMAIN-SUFFIX,afd.baidu.com,REJECT
-# 携程商旅去弹窗
-DOMAIN-SUFFIX,m.ctrip.com,REJECT
-# 网页去广告
-DOMAIN-SET,https://raw.githubusercontent.com/yangsijianjian/yang/main/list/anti-ad-surge2.txt,REJECT
 # 屏蔽ios更新
 DOMAIN,gdmf.apple.com,REJECT
-DOMAIN,xp.apple.com,REJECT
+# 广告拦截
+DOMAIN-SET,https://raw.githubusercontent.com/yangsijianjian/yang/main/list/anti-ad-surge2.txt,REJECT
 # apple
 RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/Apple_All_No_Resolve.list,Apple
 # bilibli
@@ -46,7 +33,8 @@ RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/l
 RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/Proxy_All_No_Resolve.list,Proxy
 # china
 RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/cn.list,china
-# ipv6走china
-IP-CIDR6,2409:801E::/32,china,no-resolve
-IP-CIDR6,2409:80C54::/32,china,no-resolve
-IP-CIDR6,240D:C000::/32,china,no-resolve
+# 微信ipv6走china
+#IP-CIDR6,2409:801E::/32,china
+IP-CIDR6,2409:8C54::/32,china
+IP-CIDR6,2409:8C20::/32,china
+IP-CIDR6,240D:C000::/32,china
