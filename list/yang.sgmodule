@@ -48,3 +48,5 @@ RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/l
 RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/cn.list,china
 # ipv6走china
 IP-CIDR6,2409:801E::/32,china,no-resolve
+IP-CIDR6,2409:80C54::/32,china,no-resolve
+IP-CIDR6,240D:C000::/32,china,no-resolve
