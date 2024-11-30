@@ -50,6 +50,6 @@ RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/l
 RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/cn.list,china
 # ipv6走直连
 IP-CIDR6,::/0,Proxy
-IP-CIDR,0.0.0.0/0,china
+IP-CIDR,0.0.0.0/0,china,no-resolve
 # 减少应用循环
-IP-CIDR,0.0.0.0/32,REJECT
+IP-CIDR,0.0.0.0/32,REJECT,no-resolve
