@@ -49,7 +49,7 @@ RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/l
 # china
 RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/cn.list,china
 # ipv6走分流/ipv4走直连
-IP-CIDR6,2409:8c54:871::/48,china
+IP-CIDR6,2409::/48,china
 IP-CIDR6,::/0,Proxy
 IP-CIDR,0.0.0.0/0,china
 # 减少应用循环
