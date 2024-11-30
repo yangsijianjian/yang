@@ -48,8 +48,6 @@ RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/l
 RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/Proxy_All_No_Resolve.list,Proxy
 # china
 RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/cn.list,china
-# ipv6走分流/ipv4走直连
+# ipv6走china
+IP-CIDR6,::/0,china
 IP-CIDR6,2409::/32,china
-IP-CIDR,0.0.0.0/0,china
-# 减少应用循环
-IP-CIDR,0.0.0.0/32,REJECT
