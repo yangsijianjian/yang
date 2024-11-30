@@ -1,3 +1,15 @@
+# NAME: WeChat
+# AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2024-07-03 16:17:23
+# DOMAIN: 7
+# DOMAIN-KEYWORD: 233
+# DOMAIN-SUFFIX: 22
+# IP-ASN: 1
+# IP-CIDR: 3
+# IP-CIDR6: 64
+# USER-AGENT: 2
+# TOTAL: 332
 IP-CIDR6,2402:4e00:1020:10fb:0:9466::/112,no-resolve
 IP-CIDR6,2402:4e00:1430:2264:0:9467::/96,no-resolve
 IP-CIDR6,2402:4e00:1900:1700:0:9554:1ad0:140a/128,no-resolve
