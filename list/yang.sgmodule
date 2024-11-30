@@ -1,8 +1,6 @@
 #!name=融合分流
 #!desc=融合分流
 [Rule]
-# 排除相关的QUIC流量
-AND,(PROTOCOL,QUIC,NOT,(DOMAIN-SUFFIX,dns.weixin.qq.com,DOMAIN-SUFFIX,dns.weixin.qq.com.cn,DOMAIN-SUFFIX, xiaohongshu.com)),REJECT
 # 拒绝所有其他 QUIC 流量
 PROTOCOL,QUIC,REJECT
 # 微信键盘
