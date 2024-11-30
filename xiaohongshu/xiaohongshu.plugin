@@ -4,6 +4,7 @@
 #!icon = https://raw.githubusercontent.com/RuCu6/Loon/main/Icons/app/xiaohongshu.png
 #!date = 2024-10-15 10:45
 [Rule]
+AND,(PROTOCOL,QUIC,NOT,(DOMAIN-SUFFIX, xiaohongshu.com)),REJECT
 PROTOCOL,QUIC,REJECT
 [Rewrite]
 # > 小红书_评论区图片处理@ddgksf2013
