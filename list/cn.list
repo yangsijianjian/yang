@@ -2759,7 +2759,7 @@ DOMAIN-SUFFIX,segmentfault.com
 DOMAIN-SUFFIX,sencdn.com
 DOMAIN-SUFFIX,seniverse.com
 DOMAIN-SUFFIX,senlinjimore.com
-#DOMAIN-SUFFIX,servicewechat.com
+DOMAIN-SUFFIX,servicewechat.com
 DOMAIN-SUFFIX,sf-airlines.com
 DOMAIN-SUFFIX,sf-cityrush.com
 DOMAIN-SUFFIX,sf-express.com
@@ -3281,7 +3281,7 @@ DOMAIN-SUFFIX,webgame163.com
 DOMAIN-SUFFIX,webofknowledge.com
 DOMAIN-SUFFIX,webqxs.com
 DOMAIN-SUFFIX,webterren.com
-#DOMAIN-SUFFIX,wechat.com
+DOMAIN-SUFFIX,wechat.com
 DOMAIN-SUFFIX,wegame.com
 DOMAIN-SUFFIX,wegamedeveloper.com
 DOMAIN-SUFFIX,wegameplus.com
@@ -3743,7 +3743,7 @@ USER-AGENT,QQ*
 USER-AGENT,RemotePlay*
 USER-AGENT,TIM*
 USER-AGENT,TeamViewer*
-#USER-AGENT,WeChat*
+USER-AGENT,WeChat*
 USER-AGENT,WebTorrent*
 USER-AGENT,YYeTs*
 USER-AGENT,arrowio*
