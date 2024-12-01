@@ -65,8 +65,7 @@ AND,((PROTOCOL,QUIC),(DOMAIN-SUFFIX,xiaohongshu.com,extended-matching)),REJECT
 ^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/user\/teenager\/status url reject-200
 # > 小红书_启动引导@ddgksf2013
 ^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/guide\/home_guide url reject-200
-
-hostname = edith.xiaohongshu.com, 
-pages.xiaohongshu.com, referee.xiaohongshu.com,www.xiaohongshu.com,rec.xiaohongshu.com
+ 
 [MITM]
-hostname = %APPEND% edith.xiaohongshu.com, rec.xiaohongshu.com, www.xiaohongshu.com
+hostname = %APPEND% edith.xiaohongshu.com, 
+pages.xiaohongshu.com, referee.xiaohongshu.com,www.xiaohongshu.com,rec.xiaohongshu.com
