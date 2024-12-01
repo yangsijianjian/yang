@@ -33,3 +33,5 @@ RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/l
 RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/Proxy_All_No_Resolve.list,Proxy,update-interval=-1
 # china
 RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/cn.list,china,update-interval=-1
+# ipv6
+RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/ipv6.list,ipv6,update-interval=-1
