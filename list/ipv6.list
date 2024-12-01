@@ -1,4 +1,10 @@
 # NAME: WeChat
+DOMAIN-SUFFIX,servicewechat.com
+DOMAIN-SUFFIX,wechat.com
+DOMAIN-SUFFIX,weixinbridge.com
+DOMAIN,weixin.com
 IP-CIDR6,2409:801E::/32
 IP-CIDR6,2409:8C20::/32
 IP-CIDR6,2409:8C54::/32
+IP-ASN,132203
+USER-AGENT,WeChat*
