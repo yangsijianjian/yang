@@ -1,0 +1,4 @@
+# NAME: WeChat
+IP-CIDR,111.30.160.0/20,no-resolve
+IP-CIDR,112.53.11.0/24,no-resolve
+IP-CIDR,112.53.20.0/24,no-resolve
