@@ -4,37 +4,32 @@
 # 屏蔽ios更新
 DOMAIN,gdmf.apple.com,REJECT
 # 广告拦截
-DOMAIN-SET,https://raw.githubusercontent.com/yangsijianjian/yang/main/list/anti-ad-surge2.txt,REJECT
+DOMAIN-SET,https://raw.githubusercontent.com/yangsijianjian/yang/main/list/anti-ad-surge2.txt,REJECT,pre-matching,update-interval=-1
 # apple
-RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/Apple_All_No_Resolve.list,Apple
-# bilibli
-RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/BiliBili.list,BiliBili
+RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/Apple_All_No_Resolve.list,Apple,update-interval=-1
+# 哔哩哔哩
+RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/BiliBili.list,BiliBili,update-interval=-1
 # facebook
-RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/Facebook.list,facebook
+RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/Facebook.list,facebook,update-interval=-1
 # ins
-RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/Instagram.list,Instagram
+RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/Instagram.list,Instagram,update-interval=-1
 # chatgtp
-RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/OpenAI.list,OpenAI
+RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/OpenAI.list,OpenAI,update-interval=-1
 # 微软系列
-RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/Microsoft.list,Microsoft
+RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/Microsoft.list,Microsoft,update-interval=-1
 # spotify
-RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/Spotify.list,Spotify
+RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/Spotify.list,Spotify,update-interval=-1
 # youtube
-RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/YouTube.list,YouTube
+RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/YouTube.list,YouTube,update-interval=-1
 # tg
-RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/Telegram.list,Telegram
-# tiktok
-RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/TikTok.list,TikTok
+RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/Telegram.list,Telegram,update-interval=-1
+# tk
+RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/TikTok.list,TikTok,update-interval=-1
 # 全球分流
-RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/GlobalMedia_All_No_Resolve.list,GlobalMedia
+RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/GlobalMedia_All_No_Resolve.list,GlobalMedia,update-interval=-1
 # 全球网页分流
-RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/Global_All.list.list,Global
+RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/Global_All.list.list,Global,update-interval=-1
 # proxy
-RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/Proxy_All_No_Resolve.list,Proxy
+RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/Proxy_All_No_Resolve.list,Proxy,update-interval=-1
 # china
-RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/cn.list,china
-# 微信ipv6走china
-#IP-CIDR6,2409:801E::/32,china
-IP-CIDR6,2409:8C54::/32,china
-IP-CIDR6,2409:8C20::/32,china
-IP-CIDR6,240D:C000::/32,china
+RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/cn.list,china,update-interval=-1
