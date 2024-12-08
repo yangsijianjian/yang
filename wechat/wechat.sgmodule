@@ -1,6 +1,7 @@
-#!name = wechat
-#!desc = wechat
-#野比微信公众号去广告
-#微信公众号去广告 = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/wechat/wechat.js,type=http-response,pattern=^https?:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad
-# Choler微信公众号去广告 
-http-request ^https://mp\.weixin\.qq\.com/mp/getappmsgad script-path=https://raw.githubusercontent.com/Choler/Surge/master/Script/WeChat.js, tag=WeChat
+#!name=WeChat
+#!desc=去除WeChat广告
+[Script]
+# 去微信公众号广告
+Wechat.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/Wechat.js,type=http-response,pattern=^https?:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad
+[MITM]
+hostname=%APPEND% mp.weixin.qq.com
