@@ -3,10 +3,12 @@
 [Rule]
 # 屏蔽ios更新
 DOMAIN,gdmf.apple.com,REJECT
+#siri
+DOMAIN-SUFFIX,apple-relay.apple.com,OpenAI
 # 广告拦截
 DOMAIN-SET,https://raw.githubusercontent.com/yangsijianjian/yang/main/list/anti-ad-surge2.txt,REJECT,pre-matching,update-interval=-1
 # apple
-RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/Apple_All_No_Resolve.list,Apple,update-interval=-1
+RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/apple.list,Apple,update-interval=-1
 # 哔哩哔哩
 RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/BiliBili.list,BiliBili,update-interval=-1
 # facebook
