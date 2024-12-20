@@ -1,5 +1,5 @@
 # NAME: WeChat
-#DOMAIN-SUFFIX,wxapp.tc.qq.com
+DOMAIN-SUFFIX,wxapp.tc.qq.com
 IP-CIDR6,2409:801E::/32
 IP-CIDR6,2409:8C20::/32
 IP-CIDR6,2409:8C02::/32
