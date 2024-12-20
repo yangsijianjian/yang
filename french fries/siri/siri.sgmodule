@@ -20,4 +20,4 @@
 🔍 Spotlight.ZkwSuggestService.request = type=http-request, pattern=^https?:\/\/(api-.+)\.smoot\.apple\.com\/apple\.parsec\.spotlight\.v1alpha\.ZkwSuggestService\/Suggest, requires-body=1, binary-body-mode=1, engine=webview, debug=1, script-path=https://github.com/NSRingo/Siri/releases/download/v4.2.6/request.bundle.js, argument=CountryCode="{{{CountryCode}}}"&SiriLocale="{{{SiriLocale}}}"&Region="{{{Region}}}"&SiriResponseLanguageVariant="{{{SiriResponseLanguageVariant}}}"&LogLevel="{{{LogLevel}}}"
 
 [MITM]
-hostname = %APPEND% guzzoni.smoot.apple.com, api2.smoot.apple.com, api-*.smoot.apple.com
+hostname = %APPEND% guzzoni.smoot.apple.com, api2.smoot.apple.com, api-*.smoot.apple.com, %APPEND% api*.smoot.apple.com, api.smoot.apple.cn
