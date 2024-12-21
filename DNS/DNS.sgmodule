@@ -188,7 +188,7 @@ tb.cn = server:quic://dns.alidns.com // 淘宝短网址
 *.alipay-eco.com = server:quic://dns.alidns.com // 支付宝 开放技术生态体系
 
 # > 腾讯
-# refer: https://www.dnspod.cn/products/publicdns
+refer: https://www.dnspod.cn/products/publicdns
 *.tencent.com = server:https://doh.pub/dns-query // 腾讯
 *.qcloud.com = server:https://doh.pub/dns-query // 腾讯云
 *.qcloudcdn.cn = server:https://doh.pub/dns-query // 腾讯云CDN
@@ -222,7 +222,7 @@ tb.cn = server:quic://dns.alidns.com // 淘宝短网址
 url.cn = server:https://doh.pub/dns-query // 腾讯短网址
 
 # > 百度
-# refer: https://dudns.baidu.com/support/localdns/Address/index.html
+refer: https://dudns.baidu.com/support/localdns/Address/index.html
 *.baidu = server:180.76.76.76 // 百度
 *.baidu.com = server:180.76.76.76 // 百度
 *.bdimg.com = server:180.76.76.76 // 百度 静态资源
@@ -244,7 +244,7 @@ url.cn = server:https://doh.pub/dns-query // 腾讯短网址
 dwz.cn = server:180.76.76.76 // 百度短网址
 
 # > 360
-# refer: https://sdns.360.net/dnsPublic.html#course
+refer: https://sdns.360.net/dnsPublic.html#course
 *.360.cn = server:https://doh.360.cn/dns-query // 360安全中心
 *.360safe.com = server:https://doh.360.cn/dns-query // 360安全卫士
 *.360kuai.com = server:https://doh.360.cn/dns-query // 360快资讯
@@ -265,7 +265,7 @@ dwz.cn = server:180.76.76.76 // 百度短网址
 urlqh.cn = server:https://doh.360.cn/dns-query // 360短网址
 
 # > Bytedance
-# refer: https://www.volcengine.com/docs/6758/179060
+refer: https://www.volcengine.com/docs/6758/179060
 *.amemv.com = server:180.184.1.1 // 艾特迷
 *.bdxiguaimg.com = server:180.184.1.1 // 西瓜 图片服务
 *.bdxiguastatic.com = server:180.184.1.1 // 西瓜 静态资源
@@ -318,27 +318,27 @@ upos-sz-upcdntx.bilivideo.com = server:https://doh.pub/dns-query // BiliBili upo
 
 # > 🇨🇳 CHN
 # CNNIC SDNS
-# *.gov.cn = server:1.2.4.8 // 中国政府网
+*.gov.cn = server:1.2.4.8 // 中国政府网
 # *.政务 = server:1.2.4.8 // 中国政府网
 
 # > 🇭🇰 HKG
 # PCCW Enterprises Limited
-# *.pccw.com = server:dns1.pccw.com // 电讯盈科
-# *.1010.com.hk = server:dns1.pccw.com // 1O1O
-# *.hkcsl.com = server:dns1.pccw.com // csl.
-# *.theclub.com.hk = server:dns1.pccw.com // The CLUB by HKT
-# *.now.com = server:dns2.pccw.com // now.com
-# *.nowe.com = server:dns2.pccw.com // Now E
-# *.now-tv.com = server:dns2.pccw.com // Now TV
-# *.moov.hk = server:dns3.pccw.com // MOOV
-# *.viu.com = server:dns3.pccw.com // viu
-# *.viu.tv = server:dns3.pccw.com // viu tv
+*.pccw.com = server:dns1.pccw.com // 电讯盈科
+*.1010.com.hk = server:dns1.pccw.com // 1O1O
+*.hkcsl.com = server:dns1.pccw.com // csl.
+*.theclub.com.hk = server:dns1.pccw.com // The CLUB by HKT
+*.now.com = server:dns2.pccw.com // now.com
+*.nowe.com = server:dns2.pccw.com // Now E
+*.now-tv.com = server:dns2.pccw.com // Now TV
+*.moov.hk = server:dns3.pccw.com // MOOV
+*.viu.com = server:dns3.pccw.com // viu
+*.viu.tv = server:dns3.pccw.com // viu tv
 # Hong Kong Cable Television Limited
-# *.hkcable.com.hk = server:dns1.hkcable.com.hk // Hong Kong Cable Television Limited
-# *.i-cable.com = server:dns2.hkcable.com.hk // i-CABLE
-# *.cabletv.com.hk = server:dns2.hkcable.com.hk // CABLE TV Service
+*.hkcable.com.hk = server:dns1.hkcable.com.hk // Hong Kong Cable Television Limited
+*.i-cable.com = server:dns2.hkcable.com.hk // i-CABLE
+*.cabletv.com.hk = server:dns2.hkcable.com.hk // CABLE TV Service
 # KDDI Hong Kong Limited
-# *.hk.kddi.com = server:apple.kdd.net.hk // KDDI Hong Kong
+*.hk.kddi.com = server:apple.kdd.net.hk // KDDI Hong Kong
 
 # > 🇹🇼 TWN
 # 中华电信
@@ -346,8 +346,8 @@ upos-sz-upcdntx.bilivideo.com = server:https://doh.pub/dns-query // BiliBili upo
 *.hinet.net = server:https://dns.hinet.net/dns-query // 中华电信HiNet
 *.emome.net = server:https://dns.hinet.net/dns-query // 中华电信emome
 # So-net
-# so-net.net.tw = server:ns1.so-net.net.tw // So-net Entertainment Taiwan
-# so-net.tw = server:ns1.so-net.net.tw // So-net Entertainment Taiwan
+so-net.net.tw = server:ns1.so-net.net.tw // So-net Entertainment Taiwan
+so-net.tw = server:ns1.so-net.net.tw // So-net Entertainment Taiwan
 # Taiwan Network Information Center
 *.tw = server:https://dns.twnic.tw/dns-query // TWNIC DNS
 *.taipei = server:https://dns.twnic.tw/dns-query // TWNIC DNS
