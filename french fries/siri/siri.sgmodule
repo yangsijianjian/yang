@@ -1,5 +1,5 @@
 #!name =  iRingo: ⭕ Siri
-#!desc = iOS 18⬆️ & macOS 15⬆️\n全面自定义「Siri 请求」功能。\n⚠️ 不含自定义「Siri 建议」功能。
+#!desc = iOS 18⬆️ & macOS 15⬆️\n全面自定义「Siri 请求」功能。含自定义「Siri 建议」功能。
 #!openUrl = http://boxjs.com/#/app/iRingo.Siri
 #!author = VirgilClyne[https://github.com/VirgilClyne]
 #!homepage = https://NSRingo.github.io/guide/Siri/siri
