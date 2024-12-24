@@ -19,7 +19,5 @@
 🔍 ResponseFramework.Engagement.EngagementSearch.request = type=http-request, pattern=^https?:\/\/(api-.+)\.smoot\.apple\.com\/apple\.parsec\.responseframework\.engagement\.v1alpha\.EngagementSearch\/EngagementSearch, requires-body=1, binary-body-mode=1, engine=webview, debug=1, script-path=https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/french%20fries/siri/request.bundle.js, argument=CountryCode="{{{CountryCode}}}"&SiriLocale="{{{SiriLocale}}}"&Region="{{{Region}}}"&SiriResponseLanguageVariant="{{{SiriResponseLanguageVariant}}}"&LogLevel="{{{LogLevel}}}"
 🔍 Spotlight.ZkwSuggestService.request = type=http-request, pattern=^https?:\/\/(api-.+)\.smoot\.apple\.com\/apple\.parsec\.spotlight\.v1alpha\.ZkwSuggestService\/Suggest, requires-body=1, binary-body-mode=1, engine=webview, debug=1, script-path=https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/french%20fries/siri/request.bundle.js, argument=CountryCode="{{{CountryCode}}}"&SiriLocale="{{{SiriLocale}}}"&Region="{{{Region}}}"&SiriResponseLanguageVariant="{{{SiriResponseLanguageVariant}}}"&LogLevel="{{{LogLevel}}}"
 
-hostname = %APPEND% guzzoni.smoot.apple.com, api2.smoot.apple.com, api-
-*.smoot.apple.com, %APPEND%
-api*.smoot.apple.com,api.smoot.apple.
-cn
+[MITM]
+hostname = %APPEND% guzzoni.smoot.apple.com, api2.smoot.apple.com, api-*.smoot.apple.com, api*.smoot.apple.com,api.smoot.apple.cn
