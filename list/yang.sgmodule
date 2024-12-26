@@ -7,6 +7,8 @@ DOMAIN,gdmf.apple.com,REJECT
 DOMAIN-SUFFIX,apple-relay.apple.com,OpenAI
 # 广告拦截
 DOMAIN-SET,https://raw.githubusercontent.com/yangsijianjian/yang/main/list/anti-ad-surge2.txt,REJECT,pre-matching,update-interval=-1
+#dns拦截
+DOMAIN-SET,https://github.com/VirgilClyne/GetSomeFries/raw/main/ruleset/HTTPDNS.Block.list,REJECT,pre-matching,update-interval=-1
 # apple
 RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/apple.list,Apple,update-interval=-1
 # 哔哩哔哩
