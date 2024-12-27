@@ -1,0 +1,12 @@
+#!name = didi
+# > 滴滴出行（推荐英文版）
+https?://res\.xiaojukeji\.com\/resapi\/activity\/mget - reject-dict
+https?:\/\/res\.xiaojukeji\.com\/resapi\/activity\/get(Ruled|Preload|PasMultiNotices) - reject
+# > 滴滴
+^https?:\/\/img-ys011\.didistatic\.com\/static\/ad_oss\/.*.jpg - reject
+# > 滴滴青桔
+^https?:\/\/pt-starimg\.didistatic\.com\/static\/starimg\/node\/.*.(jpg|png|gif) - reject-200
+^https?:\/\/omgup[0-9]{1}\.xiaojukeji\.com\/api - reject-200
+^https?:\/\/omgup*\.xiaojukeji\.com\/api - reject-200
+[MITM]
+hhostname = pt-starimg.didistatic.com,ys011.didistatic.com
