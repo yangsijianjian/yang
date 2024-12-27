@@ -14,7 +14,7 @@
 
 # 我的页面 - 项目列表、会员卡片
 #^https:\/\/api\.zhihu\.com\/me\/guides reject-dict
-^https:\/\/api\.zhihu\.com\/unlimited\/go\/my_card reject
+#^https:\/\/api\.zhihu\.com\/unlimited\/go\/my_card reject
 
 # 搜索页 - 关键词、猜你想搜
 #^https:\/\/api\.zhihu\.com\/search\/(hot_search|preset_words) reject-dict
