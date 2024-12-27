@@ -37,3 +37,6 @@ https://api.m.jd.com/client.action\?functionId=lite_advertising - reject
 ^https?:\/\/ms\.jr\.jd\.com\/gw\/generic\/aladdin\/(new)?na\/m\/getLoadingPicture - reject
 ^https?:\/\/appconf\.mail\.163\.com\/mmad\/ - reject
 ^https?:\/\/support\.you\.163\.com\/xhr\/boot\/getBootMedia\.json - reject
+# > 京东读书
+^https?:\/\/jdread-api\.jd\.com\/jdread\/api\/channel\/module\/opens - reject-200
+^https?:\/\/jdread-api\.jd\.com\/jdread\/api\/popup - reject-200
