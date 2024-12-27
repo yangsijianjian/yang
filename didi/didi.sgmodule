@@ -8,5 +8,7 @@ https?:\/\/res\.xiaojukeji\.com\/resapi\/activity\/get(Ruled|Preload|PasMultiNot
 ^https?:\/\/pt-starimg\.didistatic\.com\/static\/starimg\/node\/.*.(jpg|png|gif) - reject-200
 ^https?:\/\/omgup[0-9]{1}\.xiaojukeji\.com\/api - reject-200
 ^https?:\/\/omgup*\.xiaojukeji\.com\/api - reject-200
+DOMAIN-SUFFIX,img-ys011.didistatic.com,reject
+
 [MITM]
 hhostname = pt-starimg.didistatic.com,ys011.didistatic.com
