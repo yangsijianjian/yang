@@ -29,6 +29,8 @@ RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/l
 RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/Telegram.list,Telegram,update-interval=-1
 # tk
 RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/TikTok.list,TikTok,update-interval=-1
+# GitHub
+RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/GitHub.list,GitHub,update-interval=-1
 # 全球分流
 RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/GlobalMedia_All_No_Resolve.list,GlobalMedia,update-interval=-1
 # 全球网页分流
@@ -36,5 +38,5 @@ RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/l
 # proxy
 RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/Proxy_All_No_Resolve.list,Proxy,update-interval=-1
 # china
-RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/cn.list,china,update-interval=-1
+RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/ASNChina.list,china,update-interval=-1
 RULE-SET,LAN,china
