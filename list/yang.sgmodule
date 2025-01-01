@@ -40,3 +40,5 @@ RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/l
 # china
 RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/ASNChina.list,china,update-interval=-1
 RULE-SET,LAN,china
+#防止应用循环
+IP-CIDR,0.0.0.0/32,REJECT
