@@ -1,14 +1,5 @@
-#!name=微博&国际版去广告
-#!desc=整合了@zmqcherish和@Keywos的去广告配置，根据UA判断微博版本去广告
-#!author=奶思
-#!icon=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/gif/naisi-01.gif
-#!category=奶思的模块
-#!homepage=https://github.com/fmz200/wool_scripts
-#!raw-url=https://github.com/fmz200/wool_scripts/raw/main/QuantumultX/rewrite/weibo.snippet
-#!tg-group=https://t.me/lanjieguanggao
-#!tag=去广告, 微博, 奶思
-#!system=ios
-#!date=2024-08-07 20:30:00
+#!name = 微博&国际版
+#!desc = 微博
 
 [URL Rewrite]
 # 超话按钮的提示
