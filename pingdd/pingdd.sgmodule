@@ -1,6 +1,5 @@
-#!name = 拼多多净化页面布局
-#!author = 怎么肥事 walala
-#!update = 2024-10-18 13:13
+#!name = 拼多多净化
+#!desc = 拼多多净化
 
 [Rule]
 ^https:\/\/api\.pinduoduo\.com\/api\/aquarius\/hungary\/global\/homepage\? url reject-dict
