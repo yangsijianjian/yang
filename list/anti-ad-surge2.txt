@@ -7,7 +7,6 @@
 .wetype.weixin.qq.com
 .m.ctrip.com
 .discardrp.umetrip.com
-.m.ctrip.com
 .mobads.baidu.com
 .afd.baidu.com
 .000dn.com
@@ -53041,9 +53040,4 @@
 .js.mnkan.com
 .marketing.mnmpartnersllc.com
 .mnnmnn.com
-.mnnxqjvewinmxc.com
-.mno.link
-.mnorkc.xyz
-.lp.mnp.ca
-.tr.email.mnpaf.fr
-.mnpdylwayjbh.c
+.mnnxqjvewinmxc.
