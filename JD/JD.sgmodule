@@ -1,5 +1,5 @@
-#!name=京东去广告
-#!desc=京东去广告
+#!name = 京东去广告
+#!desc = 京东去广告
 
 [Rule]
 DOMAIN,dns.jd.com,REJECT,extended-matching,pre-matching
