@@ -1,13 +1,18 @@
 #!name=融合分流
 #!desc=融合分流
 [Rule]
+# 屏蔽微信键盘
+DOMAIN-SUFFIX,wetype.weixin.qq.com,REJECT
 # 屏蔽ios更新
 DOMAIN,gdmf.apple.com,REJECT
-#siri
+# siri
 DOMAIN-SUFFIX,apple-relay.apple.com,OpenAI
+# 小红书
+DOMAIN-SUFFIX,zijieapi.com,Apple
+DOMAIN-SUFFIX,zjcdn.com,Apple
 # 广告拦截
 DOMAIN-SET,https://raw.githubusercontent.com/yangsijianjian/yang/main/list/anti-ad-surge2.txt,REJECT,pre-matching,update-interval=-1
-#dns拦截
+# dns拦截
 RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/DNS/httpnds.list,REJECT,update-interval=-1
 # apple
 RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/apple.list,Apple,update-interval=-1
@@ -41,5 +46,5 @@ RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/l
 RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/ASNChina.list,china,update-interval=-1
 RULE-SET,LAN,china
 GEOIP,CN,china
-#防止应用循环
+# 防止应用循环
 IP-CIDR,0.0.0.0/32,REJECT
