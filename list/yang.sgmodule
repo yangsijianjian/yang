@@ -5,9 +5,7 @@
 DOMAIN-SUFFIX,wetype.weixin.qq.com,REJECT
 # 屏蔽ios更新
 DOMAIN,gdmf.apple.com,REJECT
-DOMAIN-SUFFIX,mesu.apple.com,REJECT
-DOMAIN-SUFFIX,appldnld.apple.com,REJECT
-DOMAIN-SUFFIX,apps.apple.com,REJECT
+DOMAIN,iosapps.itunes.apple.com,REJECT
 # siri
 DOMAIN-SUFFIX,apple-relay.apple.com,OpenAI
 # 小红书
