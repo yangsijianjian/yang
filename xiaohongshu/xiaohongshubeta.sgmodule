@@ -4,7 +4,7 @@
 #!version=1.0
 
 [Script]
-http-response ^http:\/\/sns-na-i2\.xhscdn\.com script-path=https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/xiaohongshu/xiaohongshubeta.js, requires-body=true, max-size=0
+http-response ^https:\/\/www\.xiaohongshu\.com script-path=https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/xiaohongshu/xiaohongshubeta.js, requires-body=true, max-size=0
 
 [MITM]
-hostname = *.xiaohongshu.com
+hostname = www.xiaohongshu.com
