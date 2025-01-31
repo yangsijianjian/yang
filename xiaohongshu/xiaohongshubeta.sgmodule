@@ -1,0 +1,10 @@
+#!name=Remove XHS Live TAP Tags
+#!desc=移除小红书直播页面的 TAP 标签
+#!author=yang
+#!version=1.0
+
+[Script]
+http-response ^https?:\/\/.*xiaohongshu\.com script-path=https://raw.githubusercontent.com/your-repo/remove_xhs_tap.js, requires-body=true, max-size=0
+
+[MITM]
+hostname = *.xiaohongshu.com
