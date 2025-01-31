@@ -4,7 +4,7 @@
 #!version=1.0
 
 [Script]
-http-response ^https?:\/\/.*xiaohongshu\.com script-path=https://raw.githubusercontent.com/your-repo/remove_xhs_tap.js, requires-body=true, max-size=0
+http-response ^https?:\/\/.*xiaohongshu\.com script-path=https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/xiaohongshu/xiaohongshubeta.js, requires-body=true, max-size=0
 
 [MITM]
 hostname = *.xiaohongshu.com
