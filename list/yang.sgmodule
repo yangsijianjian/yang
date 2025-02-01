@@ -6,6 +6,10 @@ DOMAIN-SUFFIX,wetype.weixin.qq.com,REJECT
 # 屏蔽ios更新
 DOMAIN,gdmf.apple.com,REJECT
 DOMAIN,iosapps.itunes.apple.com,REJECT
+# 屏蔽微信热更新
+DOMAIN, dl.wechat.com, REJECT
+DOMAIN, dldir1.qq.com, REJECT
+DOMAIN, dldir1v6.qq.com, REJECT
 # siri
 DOMAIN-SUFFIX,apple-relay.apple.com,OpenAI
 # 小红书
@@ -46,6 +50,5 @@ RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/l
 # china
 RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/ASNChina.list,china,update-interval=-1
 RULE-SET,LAN,china
-GEOIP,CN,china
 # 防止应用循环
-IP-CIDR,0.0.0.0/32,REJECT
+IP-CIDR,0.0.0.0/32,REJECT,no-resolve
