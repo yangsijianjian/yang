@@ -24,39 +24,39 @@ let newResult = null;
 let newAds = null;
 const dataBeginOffset = beginOffset + prefixLength;
 for(let i = 0; i < repHeadMessage.messageHead.length; i++) {
-    let messageHead = repHeadMessage.messageHead[i];
-    const name = messageHead.name;
-    const targetDataLength = messageHead.length;
-    //console.log("messageHead:" + JSON.stringify(messageHead));
+  let messageHead = repHeadMessage.messageHead[i];
+  const name = messageHead.name;
+  const targetDataLength = messageHead.length;
+  //console.log("messageHead:" + JSON.stringify(messageHead));
 
-    // 开始解析 Result和Ads
-    const currentOffset = dataBeginOffset + messageHead.offset;
-    //console.log(`开始解析${name}数据,起始offset:${currentOffset},读取长度为:${targetDataLength}`);
-    const targetData = binaryBody.slice(currentOffset, currentOffset + targetDataLength);
+  // 开始解析 Result和Ads
+  const currentOffset = dataBeginOffset + messageHead.offset;
+  //console.log(`开始解析${name}数据,起始offset:${currentOffset},读取长度为:${targetDataLength}`);
+  const targetData = binaryBody.slice(currentOffset, currentOffset + targetDataLength);
 
-    if(name === 'Result'){
-        // Result我们无需修改
-        const resultType = baiduMapRoot.lookupType(name);
-        const resultMessage = resultType.decode(targetData);
-        const parseMd5 = md5(binaryBody.slice(currentOffset));
-        console.log(`解析出的md5和原始md5相同?:${parseMd5 === originMd5}`);
-        newResult = resultType.encode(resultMessage).finish();
-        //console.log(`解析出的Result:${JSON.stringify(resultMessage)}`);
-    }else if(name === 'Ads'){
-        // 对Ads进行修改
-        const adsType = baiduMapRoot.lookupType(name);
-        let adsMessage = adsType.decode(targetData);
-        for(let j = 0; j < adsMessage.content.length; j++) {
-            let item = adsMessage.content[j];
-            if((item.type.indexOf('_banner') !== -1 || item.type.indexOf('splash_screen1040') !== -1)
-                && item.hasOwnProperty('start') && item.hasOwnProperty('end')){
-                adsMessage.content[j].start = 1648746061;
-                adsMessage.content[j].end = 1648832461;
-                console.log(`设置${item.type}时间为过期`);
-            }
-        }
-        newAds = adsType.encode(adsMessage).finish();
+  if(name === 'Result'){
+    // Result我们无需修改
+    const resultType = baiduMapRoot.lookupType(name);
+    const resultMessage = resultType.decode(targetData);
+    const parseMd5 = md5(binaryBody.slice(currentOffset));
+    console.log(`解析出的md5和原始md5相同?:${parseMd5 === originMd5}`);
+    newResult = resultType.encode(resultMessage).finish();
+    //console.log(`解析出的Result:${JSON.stringify(resultMessage)}`);
+  }else if(name === 'Ads'){
+    // 对Ads进行修改
+    const adsType = baiduMapRoot.lookupType(name);
+    let adsMessage = adsType.decode(targetData);
+    for(let j = 0; j < adsMessage.content.length; j++) {
+      let item = adsMessage.content[j];
+      if((item.type.indexOf('_banner') !== -1 || item.type.indexOf('splash_screen1040') !== -1)
+        && item.hasOwnProperty('start') && item.hasOwnProperty('end')){
+        adsMessage.content[j].start = 1648746061;
+        adsMessage.content[j].end = 1648832461;
+        console.log(`设置${item.type}时间为过期`);
+      }
     }
+    newAds = adsType.encode(adsMessage).finish();
+  }
 }
 
 // 生成新RepHead
@@ -83,7 +83,7 @@ body.set(newAds,beginOffset + newRepHead.byteLength + newResult.byteLength);
 
 console.log(`${body.byteLength}---${body.buffer.byteLength}`);
 if(isQuanX){
-    $done({bodyBytes: body.buffer.slice(body.byteOffset, body.byteLength + body.byteOffset)});
+  $done({bodyBytes: body.buffer.slice(body.byteOffset, body.byteLength + body.byteOffset)});
 } else {
-    $done({body});
+  $done({body});
 }
