@@ -3479,7 +3479,7 @@ https?:\/\/m\.sd\.10086\.cn\/zapi\/app_common\/homeWelcome\/welcome.do url rejec
 # 主页面
 ^https?:\/\/zgrb\.epicc\.com\.cn\/G-HAPP\/a\/config\/homeInit\/v url script-response-body https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/myBlockAds/picc_ads.js
 # 我的页面
-^https?:\/\/zgrb\.epicc\.com\.cn\/G-HAPP\/mpageconfig\/myPageConfigList\/v url script-response-body hhttps://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/myBlockAds/picc_ads.js
+^https?:\/\/zgrb\.epicc\.com\.cn\/G-HAPP\/mpageconfig\/myPageConfigList\/v url script-response-body https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/myBlockAds/picc_ads.js
 
 # > 中油优途
 # hostname = sichuan.95504.net
