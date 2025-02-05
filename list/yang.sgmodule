@@ -1,5 +1,5 @@
-#!name=融合分流
-#!desc=融合分流
+#!name=融合
+#!desc=融合
 [Rule]
 # 屏蔽微信键盘
 DOMAIN-SUFFIX,wetype.weixin.qq.com,REJECT
@@ -10,6 +10,9 @@ DOMAIN,iosapps.itunes.apple.com,REJECT
 DOMAIN, dl.wechat.com, REJECT
 DOMAIN, dldir1.qq.com, REJECT
 DOMAIN, dldir1v6.qq.com, REJECT
+# 航旅纵横
+DOMAIN-SUFFIX,startup.umetrip.com, REJECT
+DOMAIN-SUFFIX,home.umetrip.com, REJECT
 # siri
 DOMAIN-SUFFIX,apple-relay.apple.com,OpenAI
 # 小红书
