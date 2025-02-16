@@ -5,11 +5,12 @@
 DOMAIN-SUFFIX,wetype.weixin.qq.com,REJECT
 # 屏蔽ios更新
 DOMAIN,gdmf.apple.com,REJECT
+DOMAIN,setup.icloud.com,REJECT
 DOMAIN,iosapps.itunes.apple.com,REJECT
 # 屏蔽微信热更新
-DOMAIN, dl.wechat.com, REJECT
-DOMAIN, dldir1.qq.com, REJECT
-DOMAIN, dldir1v6.qq.com, REJECT
+DOMAIN,dl.wechat.com,REJECT
+DOMAIN,dldir1.qq.com,REJECT
+DOMAIN,dldir1v6.qq.com,REJECT
 # 航旅纵横
 DOMAIN-SUFFIX,startup.umetrip.com, REJECT
 DOMAIN-SUFFIX,home.umetrip.com, REJECT
