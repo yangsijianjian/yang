@@ -5,7 +5,6 @@
 DOMAIN-SUFFIX,wetype.weixin.qq.com,REJECT
 # 屏蔽ios更新
 DOMAIN,gdmf.apple.com,REJECT
-DOMAIN,setup.icloud.com,REJECT
 DOMAIN,iosapps.itunes.apple.com,REJECT
 # 屏蔽微信热更新
 DOMAIN,dl.wechat.com,REJECT
@@ -39,6 +38,8 @@ RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/l
 RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/Spotify.list,Spotify,update-interval=-1
 # youtube
 RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/YouTube.list,YouTube,update-interval=-1
+# x
+RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/x.list,x,update-interval=-1
 # tg
 RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/Telegram.list,Telegram,update-interval=-1
 # tk
