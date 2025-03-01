@@ -1,5 +1,3 @@
-// 2024-10-15 10:45
-
 /*
 引用地址 https://raw.githubusercontent.com/RuCu6/Loon/main/Scripts/xiaohongshu.js
 */
