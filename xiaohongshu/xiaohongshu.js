@@ -2,6 +2,7 @@
 引用地址 https://raw.githubusercontent.com/RuCu6/Loon/main/Scripts/xiaohongshu.js
 */
 // 2024-11-08 12:45
+
 const url = $request.url;
 if (!$response.body) $done({});
 let obj = JSON.parse($response.body);
