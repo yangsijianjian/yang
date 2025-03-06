@@ -27,7 +27,5 @@ DOMAIN,img-ys011.didistatic.com,REJECT
 ^https:\/\/conf\.diditaxi\.com\.cn\/ota\/na\/yuantu\/infoList response-body-json-jq '.data.disorder_cards.top_banner_card.data |= if .[0].T == "yuentu_top_banner" then .[1:] else . end'
 ^https:\/\/api\.udache\.com\/gulfstream\/passenger-center\/v2\/other\/pInTripLayout response-body-json-jq '.data.order_components |= map(select(.name != "passenger_common_casper"))'
 
-
-
 [MITM]
 hostname = %APPEND% common.diditaxi.com.cn,freight.xiaojukeji.com,daijia.kuaidadi.com,162.14.157.*,ct.xiaojukeji.com,res.xiaojukeji.com,conf.diditaxi.com.cn,api.udache.com,123.207.209.*,112.53.55.225,120.241.142.*,120.241.143.*,116.85.*,139.199.240.84
