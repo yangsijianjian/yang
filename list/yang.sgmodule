@@ -20,6 +20,8 @@ DOMAIN-SUFFIX,zijieapi.com,Apple
 DOMAIN-SUFFIX,zjcdn.com,Apple
 # 广告拦截
 DOMAIN-SET,https://raw.githubusercontent.com/yangsijianjian/yang/main/list/anti-ad-surge2.txt,REJECT,pre-matching,update-interval=-1
+# ad
+RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/list/ad.list,REJECT,update-interval=-1
 # dns拦截
 RULE-SET,https://raw.githubusercontent.com/yangsijianjian/yang/refs/heads/main/DNS/httpnds.list,REJECT,update-interval=-1
 # apple
