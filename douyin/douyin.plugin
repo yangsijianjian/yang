@@ -1,5 +1,5 @@
-香港抖音去广告
-精简左右侧边栏、移除底栏切换，其余内容后续再完善。
+#!name=香港抖音去广告
+#!desc=精简左右侧边栏、移除底栏切换
 [Rewrite]
 # 左侧边栏 - 常用小程序、常访问的人
 ^https:\/\/aweme\.snssdk\.com\/aweme\/homepage\/sidebar_data\/\? response-body-json-del data_map.recently_apps data_map.recently_users
