@@ -1,6 +1,6 @@
 #!name=香港抖音去广告
 #!desc=精简左右侧边栏、移除底栏切换
-[Rewrite]
+[Script]
 # 左侧边栏 - 常用小程序、常访问的人
 ^https:\/\/aweme\.snssdk\.com\/aweme\/homepage\/sidebar_data\/\? response-body-json-del data_map.recently_apps data_map.recently_users
 # 底栏皮肤
