@@ -9,7 +9,7 @@ DOMAIN-SUFFIX,cupid.iqiyi.com,DIRECT
 DOMAIN,api.iqiyi.com,REJECT
 DOMAIN,access.if.iqiyi.com,REJECT
 
-[Script]
+[Body Rewrite]
 ^https:\/\/cards\.iqiyi\.com\/views_home\/3\.0\/qy_home\? response-body-json-del base.statistics
 
 ^https:\/\/cards\.iqiyi\.com\/views_home\/3\.0\/qy_home\? response-body-json-jq 'del(.cards[] | select(.alias_name == "focus" or .alias_name == "ad_mobile_flow" or .alias_name == "ad_trueview"))'
