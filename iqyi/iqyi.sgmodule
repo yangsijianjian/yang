@@ -64,4 +64,4 @@ http-response-jq ^https?:\/\/iface2\.iqiyi\.com\/aggregate\/3\.0\/getMyMenus\? '
 ^https?:\/\/iface2\.iqiyi\.com\/views_pop\/3\.0\/pop_control\? data-type=text data="{}" status-code=200
 
 [mitm]
-hostname=-i.vip.iqiyi.com,*.iqiyi.com
+hostname = %APPEND% -i.vip.iqiyi.com,*.iqiyi.com
